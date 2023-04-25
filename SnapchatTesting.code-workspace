@@ -1,0 +1,16 @@
+{
+    "folders": [
+		{
+			"path": "../SnapchatTesting"
+		},
+		{
+			"path": "../SnapchatAssessment"
+		},
+		{
+			"path": "../try2"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "try2"
+    }
+}

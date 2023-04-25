@@ -1,0 +1,283 @@
+@font-face {
+    font-family: myFont;
+    src: url(Alpino-Variable.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+
+}
+
+nav {
+    height: 80px;
+    background: #324C65;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding: 0rem calc((100vw-1300px) / 2);
+}
+
+.logo {
+    color: #E4F4F3;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 2 rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    text-size-adjust: 100;
+    color: #E4F4F3;
+    padding: 0 1.5rem;
+    padding-right: 75px;
+    position: relative;
+}
+
+nav a:hover {
+
+    color: aliceblue;
+}
+
+nav a::after {
+    content: '';
+    height: 2px;
+    width: 40%;
+    background: #E4F4F3;
+    position: absolute;
+    left: 17px;
+    bottom: -8px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+
+}
+
+nav a:hover::after {
+    opacity: 1;
+}
+
+.container {
+    width: 100%;
+    height: 75vh;
+
+}
+
+.banner {
+    width: 100%;
+    height: 65vh;
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: 20%;
+
+}
+
+.banner-text {
+    padding-top: 150px;
+    margin-left: 50px;
+}
+
+.banner-text h1 {
+    color: white;
+    padding-top: 75px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.banner-text p {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    background: black;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button:hover {
+    background: #fff;
+    color: dimgray
+}
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+#pic {
+
+    max-width: 90%;
+    height: auto;
+    margin-left: 33px;
+    z-index: -1
+}
+
+.link {
+    position: relative;
+    bottom: 70px;
+    right: 0%;
+    left: 40%;
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    border-radius: 0;
+    opacity: 0;
+    object-fit: fill;
+
+}
+
+.column:hover::before {
+
+    height: 300px;
+    margin-left: 33px;
+}
+
+.column:hover {
+
+    opacity: 1;
+
+}
+
+.column:hover .link {
+    opacity: 1;
+
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    background-image: url(ig.jpg);
+}
+
+.text {
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+body {
+    padding-bottom: 200px;
+}
+
+.contact {
+    text-align: center;
+}
+
+#heading {
+    text-align: center;
+    font-size: 50px;
+    color: #324C65;
+    margin: 25px;
+}
+
+.inside {
+
+    color: gray;
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+    overflow: hidden;
+    font-size: 20px;
+    padding-bottom: 75px;
+
+
+}
+
+.ig {
+    color: #324C65;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.ig:hover {
+
+    color: grey;
+    border-bottom-width: 0 0 0px;
+    border-bottom: solid 1px;
+
+}
+
+
+/* About Page */
+
+.top {
+    margin-left: 50px;
+    padding-top: 50px;
+    color: #324C65;
+    font-size: 75px;
+
+}
+
+#profile {
+
+
+    max-width: 450px;
+    height: auto;
+    float: left;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    margin-left: 20%;
+
+
+
+}
+
+.bodyPage {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 200px;
+
+}
+
+.information {
+
+    margin: 150px auto;
+    width: 70%;
+    display: flex;
+    padding-bottom: 200px;
+}
+
+.textBox {
+
+    padding-left: 70px;
+    padding-bottom: 150px;
+    font-size: 30px;
+    color: grey;
+    width: 700px;
+    float: left;
+
+
+}
+
+.socials p {
+
+    align-items: center;
+    position: absolute;
+    padding-top: 250px;
+    margin-left: 110px;
+    bottom: 0px;
+    left: 25px;
+
+}

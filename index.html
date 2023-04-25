@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>yobbyismyhobby 🦖 </title>
+    <link rel="icon" type="image/x-icon" href="/dinosaur.png">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">YOBBYISMYHOBBY - unofficial</div>
+        <div class="nav-pages">
+
+            <a href="./index.html">Home</a>
+
+            <a href="./about.html">About</a>
+        </div>
+
+
+    </nav>
+    <div class="container">
+        <div class="banner">
+            <div class="banner-text">
+                <h1>Ceramics Store Based in LA</h1>
+                <p>Home to the cutest and most exotic creations.</p>
+                <a href="https://www.etsy.com/shop/yobbobboy">
+                    <button id="btn">SHOP NOW</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <body>
+
+
+        <div class="row">
+            <div class="column">
+                <img id="pic" src="gator.jpg">
+                <a href="https://www.instagram.com/p/CdD1X5VO_Jg/" target="_blank">
+                    <button class="link">Instagram</button>
+                </a>
+
+            </div>
+
+            <div class="column">
+                <img id="pic" src="/cow.jpg">
+                <a href="https://www.instagram.com/reel/Cb0T_KzJvZL/" target="_blank">
+                    <button class="link">Instagram</button>
+                </a>
+
+            </div>
+
+            <div class="column">
+                <img id="pic" src="/capy.jpg">
+                <a href="https://www.instagram.com/reel/Ce87ruLvikH/" target="_blank">
+                    <button class="link">Instagram</button>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="contact">
+
+            <h1 id="heading">
+                Thanks for Visiting!
+            </h1>
+            <div class="inside">
+                <p>We appreciate you for admiring our work. Please stay tuned for more contents and products in the
+                    future. To stay updated, feel free to join our Instagram page for more updates in the future.
+                </p>
+
+            </div>
+
+
+            <a href="https://www.instagram.com/yobbyismyhobby/" target="_blank" class="ig">
+                Click here to stay updated through Instagram @yobbyismyhobby!
+            </a>
+
+
+        </div>
+
+        </div>
+
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            $(".banner-text").css("opacity", 1 - $(window).scrollTop() / 250)
+        });
+    </script>
+
+
+</body>
+
+</html>
